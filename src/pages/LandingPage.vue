@@ -5,8 +5,8 @@
             <p>Join us in a journey of transformation where every workout is an opportunity to grow stronger. Together,
                 we’ll build a foundation of health, resilience, and confidence that lasts a lifetime.</p>
             <div class="bttns">
-                <router-link to="/" class="btn btn-first">Join us</router-link>
-                <router-link to="/" class="btn btn-second">See Equipment</router-link>
+                <router-link to="/membership" class="btn btn-first">Join us</router-link>
+                <router-link to="/showcase" class="btn btn-second">See Equipment</router-link>
             </div>
         </div>
     </main>
@@ -18,10 +18,10 @@
 
 <style scoped lang="scss">
 main {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0)), url('../assets/photos/landing_desktop.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
 }
 
 .landing {
@@ -29,6 +29,13 @@ main {
     max-width: min(80%, 500px);
     margin-inline: auto;
     text-wrap: balance;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 
     h2 {
         color: $text-accent;
