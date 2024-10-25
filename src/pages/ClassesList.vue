@@ -1,6 +1,6 @@
 <template>
     <main class="classes">
-        <div class="class">
+        <section class="class">
             <div class="class-picture">
                 <img src="../assets/photos/yoga.jpg" alt="yoga">
             </div>
@@ -16,8 +16,8 @@
                     <li><q-icon name="self_improvement" /> Suitable for beginners and advanced practitioners</li>
                 </ul>
             </div>
-        </div>
-        <div class="class">
+        </section>
+        <section class="class">
             <div class="class-picture">
                 <img src="../assets/photos/lifting.jpg" alt="lifting weigths">
             </div>
@@ -33,7 +33,7 @@
                         balanced workout</li>
                 </ul>
             </div>
-        </div>
+        </section>
         <div class="class">
             <div class="class-picture">
                 <img src="../assets/photos/begginer.jpg" alt="begginer">
@@ -104,6 +104,7 @@ h3 {
         margin-bottom: 6rem;
         background-color: $primary;
         border-radius: 1rem;
+        align-items: stretch;
 
         &>* {
             flex: 1;
@@ -111,11 +112,12 @@ h3 {
     }
 
     .class:nth-child(1) {
-        margin-top: 2rem;
+        margin-top: 7rem;
     }
 
     img {
         border-radius: 1rem;
+        height: 100%;
     }
 
     .class:nth-child(even) {
@@ -124,6 +126,7 @@ h3 {
 
     .class-content {
         text-align: left;
+        align-self: center;
     }
 }
 </style>

@@ -1,13 +1,12 @@
 <template>
     <main>
-        <h2>Tiers</h2>
         <div class="tiers">
             <div class="tier bronze">
                 <h3><q-icon name="military_tech" class="i-bronze" />Bronze</h3>
                 <p>Perfect for the busy go-getter</p>
                 <ul role="list">
-                    <li><q-icon name="star" class="list-icon" />8 entries a month.</li>
-                    <li><q-icon name="star" class="list-icon" />Base gym access.</li>
+                    <li><q-icon name="star" class="list-icon" /> 8 entries a month.</li>
+                    <li><q-icon name="star" class="list-icon" /> Base gym access.</li>
                 </ul>
                 <button>39.99&dollar;</button>
             </div>
@@ -15,9 +14,9 @@
                 <h3><q-icon name="military_tech" class="i-silver" />Silver</h3>
                 <p>For the committed fitness enthusiast</p>
                 <ul role="list">
-                    <li><q-icon name="star" class="list-icon" />16 entries a month.</li>
-                    <li><q-icon name="star" class="list-icon" />Base Gym access.</li>
-                    <li><q-icon name="star" class="list-icon" />10% discount on complimentary products.</li>
+                    <li><q-icon name="star" class="list-icon" /> 16 entries a month.</li>
+                    <li><q-icon name="star" class="list-icon" /> Base Gym access.</li>
+                    <li><q-icon name="star" class="list-icon" /> 10% discount on complimentary products.</li>
                 </ul>
                 <button>59.99&dollar;</button>
             </div>
@@ -25,11 +24,11 @@
                 <h3><q-icon name="military_tech" class="i-gold" />Gold</h3>
                 <p>Unlock the ultimate fitness experience</p>
                 <ul role="list">
-                    <li><q-icon name="star" class="list-icon" />Unlimited entries.</li>
-                    <li><q-icon name="star" class="list-icon" />Access to additional areas, including sauna climbing
+                    <li><q-icon name="star" class="list-icon" /> Unlimited entries.</li>
+                    <li><q-icon name="star" class="list-icon" /> Access to additional areas, including sauna climbing
                         wall and others.</li>
-                    <li><q-icon name="star" class="list-icon" />20% discount on complimentary products.</li>
-                    <li><q-icon name="star" class="list-icon" />15% discount on our classes.</li>
+                    <li><q-icon name="star" class="list-icon" /> 20% discount on complimentary products.</li>
+                    <li><q-icon name="star" class="list-icon" /> 15% discount on our classes.</li>
                 </ul>
                 <button>99.99&dollar;</button>
             </div>
@@ -50,13 +49,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     color: $text-primary;
-}
-
-h2 {
-    color: $text-accent;
-    text-align: center;
-    font-weight: 500;
-    margin-block: 1rem;
 }
 
 h3 {
@@ -88,6 +80,7 @@ button {
     align-items: center;
     gap: 2rem;
     padding-bottom: 2rem;
+    margin-top: 5rem;
 }
 
 .tier {

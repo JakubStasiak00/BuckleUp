@@ -12,7 +12,6 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/MembershipPrices.vue'),
       },
       { path: 'showcase', component: () => import('pages/GymShowcase.vue') },
-      { path: 'about', component: () => import('pages/AboutUs.vue') },
       { path: 'location', component: () => import('pages/ContactInfo.vue') },
     ],
   },

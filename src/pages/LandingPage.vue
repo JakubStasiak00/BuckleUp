@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="landing">
+        <section class="landing">
             <h2>Transform Your Body, Transform Your Life.</h2>
             <p>Join us in a journey of transformation where every workout is an opportunity to grow stronger. Together,
                 we’ll build a foundation of health, resilience, and confidence that lasts a lifetime.</p>
@@ -8,7 +8,7 @@
                 <router-link to="/membership" class="btn btn-first">Join us</router-link>
                 <router-link to="/showcase" class="btn btn-second">See Equipment</router-link>
             </div>
-        </div>
+        </section>
     </main>
 </template>
 
@@ -39,15 +39,16 @@ main {
 
     h2 {
         color: $text-accent;
-        font-weight: 300;
+        font-weight: 400;
         font-size: clamp(1.5rem, 0.6rem + 2.5vw, 3rem);
         line-height: clamp(1.5rem, 0.6rem + 2.5vw, 3rem);
+        margin-bottom: 1rem;
     }
 
     p {
         color: $text-primary;
         font-weight: 300;
-        font-size: clamp(0.8rem, 0.62rem + 1.2vw, 1.7rem);
+        font-size: clamp(1.1rem, 0.62rem + 1.2vw, 1.7rem);
     }
 
     .bttns {

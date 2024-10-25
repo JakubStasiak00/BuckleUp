@@ -6,6 +6,10 @@
       <nav v-if="!$q.screen.lt.md">
         <ul class="menu">
           <li>
+            <q-icon class="icon" name="home" />
+            <router-link to="/" class="subpage-link">Home</router-link>
+          </li>
+          <li>
             <q-icon class="icon" name="star" />
             <router-link to="classes" class="subpage-link">Classes</router-link>
           </li>
@@ -18,10 +22,6 @@
             <router-link to="showcase" class="subpage-link">Showcase</router-link>
           </li>
           <li>
-            <q-icon class="icon" name="person" />
-            <router-link to="about" class="subpage-link">About</router-link>
-          </li>
-          <li>
             <q-icon class="icon" name="pin_drop" />
             <router-link to="location" class="subpage-link">Location</router-link>
           </li>
@@ -31,6 +31,10 @@
         <q-icon class="hamburger" name="menu" @click="changeDrawerState" :class="isDrawerOpen ? 'text-accent' : ''" />
         <q-drawer side="right" v-model="isDrawerOpen" class="drawer bg-primary">
           <ul class="menu menu__drawer">
+            <li>
+              <q-icon class="icon" name="home" />
+              <router-link to="/" class="subpage-link">Home</router-link>
+            </li>
             <li>
               <q-icon class="icon" name="star" />
               <router-link to="classes" class="subpage-link">Classes</router-link>
@@ -44,10 +48,6 @@
               <router-link to="showcase" class="subpage-link">Showcase</router-link>
             </li>
             <li>
-              <q-icon class="icon" name="person" />
-              <router-link to="about" class="subpage-link">About</router-link>
-            </li>
-            <li>
               <q-icon class="icon" name="pin_drop" />
               <router-link to="location" class="subpage-link">Location</router-link>
             </li>
@@ -59,6 +59,10 @@
     <q-page-container class="content">
       <router-view />
     </q-page-container>
+
+    <footer>
+
+    </footer>
   </q-layout>
 </template>
 
@@ -148,21 +152,31 @@ const changeDrawerState = () => {
 
 header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
-  padding: 0.3rem 1rem 0;
+  padding: 0 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(38, 38, 38);
-  background: linear-gradient(0deg, rgb(14, 14, 14) 0%, rgb(29, 29, 29) 100%);
   z-index: 10;
+}
+
+header::before {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.45);
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .logo {
   font-family: Obrazec;
   color: $text-primary;
-  font-size: clamp(2rem, 1.2rem + 4vw, 5rem);
+  font-size: clamp(2rem, 1.2rem + 4vw, 4rem);
   line-height: normal;
 }
 

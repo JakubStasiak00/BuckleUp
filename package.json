@@ -4,7 +4,7 @@
   "description": "Gym example Website",
   "productName": "BuckleUp",
   "author": "Jakub Stasiak <jakub.stasiak.front@gmail.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
